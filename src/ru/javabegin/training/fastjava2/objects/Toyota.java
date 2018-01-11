@@ -1,5 +1,6 @@
 package ru.javabegin.training.fastjava2.objects;
 
+import java.io.IOException;
 import java.util.logging.*;
 
 public class Toyota extends Object{
@@ -9,12 +10,18 @@ public class Toyota extends Object{
 
     private static Logger log = Logger.getLogger(Toyota.class.getName());
 
-
     public Toyota(String name, double volume) {
+        try {
+            FileHandler fh = new FileHandler("Toyota");
+            log.addHandler(fh);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
         this.name = name;
         this.volume = volume;
         //System.out.println("Toyota constr");
-        log.info("Constructor1");
+        log.severe("Constructor1");
     }
 
     public Toyota(String name) {
