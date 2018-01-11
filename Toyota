@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2018-01-11T20:18:50</date>
+  <millis>1515691130732</millis>
+  <sequence>0</sequence>
+  <logger>ru.javabegin.training.fastjava2.objects.Toyota</logger>
+  <level>SEVERE</level>
+  <class>ru.javabegin.training.fastjava2.objects.Toyota</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>Constructor1</message>
+</record>
+</log>
